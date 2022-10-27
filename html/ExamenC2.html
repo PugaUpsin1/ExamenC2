@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen C2</title>
+    <link rel="stylesheet" href="/css/styleEC2.css">
+    <script src=""></script>
+</head>
+<body>
+        <heade id="encabezado">
+            <h1>Cash</h1>
+        </heade>
+    
+        <div id="contenido">
+            <div id="calculador">
+                <input type="text" name="cant" id="cant" placeholder="Cantidad">
+                <select name="origen" id="origen" onchange="">
+                    <option value="0" selected style="display: none;">Moneda Origen</option>
+                    <option value="1">Dolar Estadounidense</option>
+                    <option value="1.35">Dolar Canadiense</option>
+                    <option value=".99">Euro</option>
+                    <option value="19.85">Peso Mexicano</option>
+                </select>
+                <select name="destino" id="destino">
+                    <option value="0" selected style="display: none;">Moneda Destino</option>
+                    <option value="1">Dolar Estadounidense</option>
+                    <option value="1.35">Dolar Canadiense</option>
+                    <option value=".99">Euro</option>
+                    <option value="19.85">Peso Mexicano</option>
+                </select>
+                <input type="text" name="subtot" id="subtot" placeholder="Subtotal">
+                <input type="text" name="comi" id="comi" placeholder="Total Comisión">
+                <input type="text" name="tot" id="tot" placeholder="Total a pagar">
+                <button id="cal" onclick="calcular()">Calcular</button>
+                <button id="reg" onclick="">Registrar</button>
+            </div>
+            <div id="cont2">
+                <h2>Registros Realizados</h2>
+                <div id="registros">
+                    <p></p>
+                </div>
+                <div id="line"></div>
+                <div id="tg">
+                    <button id="borrR" onclick="">Borrar registros</button>
+                    <h3>Total general:</h3> <label for="" id="totalgeneral"></label>
+                </div>
+            </div>
+        </div>
+        <div id="pie">
+            <footer>
+                <h4>Todos los derechos registrados @ Issac David Puga</h4>
+            </footer>
+         </div>
+</body>
+</html>
