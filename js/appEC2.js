@@ -56,3 +56,23 @@ function calcularcam() {
     }
 }
 
+
+function registrar(){
+    var final=0;
+    let tot= document.getElementById('tot').value;
+    let parrafo = document.getElementById('tabla');
+    let tf = document.getElementById('totalgeneral');
+    let txt;
+    var origen = document.getElementById('origen')[document.getElementById('origen').selectedIndex].text;
+    var destino = document.getElementById('destino')[document.getElementById('destino').selectedIndex].text;
+     let cant = document.getElementById('cant').value;
+     let sub = document.getElementById('subtot').value;
+     let comi= document.getElementById('comi').value;
+     let total = document.getElementById('tot').value
+     txt=cant + " " + origen + " a " + destino + " " + sub + " "
+     + comi+ " " + total + "<br>";
+     parrafo.innerHTML= parrafo.innerHTML + txt;
+     final=  parseFloat(tot) + final ;
+     tf.innerText=final;
+}
+
