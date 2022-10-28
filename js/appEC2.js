@@ -76,6 +76,7 @@ function registrar(){
      tf.innerText=final;
 }
 
+
 function borrar() {
     let parrafo = document.getElementById('tabla');
     let tf = document.getElementById('totalgeneral');
