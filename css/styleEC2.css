@@ -38,7 +38,7 @@ body{
 }
 #registros {
     width: 1000px;
-    height: 50px;
+    height: 100px;
     background-color: yellow;
 }
 #pie{
@@ -53,7 +53,20 @@ body{
     width: 80%;
     height: 2px;
     background-color: black;
+
 }
+
+#registros {
+    display: flex;
+    flex-direction: column;
+}
+
+#tabla{
+    display: flex;
+    flex-direction: column;
+}
+
+
 #tg{
     margin-top: 20px;
     display: flex;

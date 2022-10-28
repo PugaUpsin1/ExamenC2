@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Examen C2</title>
     <link rel="stylesheet" href="/css/styleEC2.css">
-    <script src=""></script>
+    <script src="/js/appEC2.js"></script>
 </head>
 <body>
         <heade id="encabezado">
@@ -16,7 +16,7 @@
         <div id="contenido">
             <div id="calculador">
                 <input type="text" name="cant" id="cant" placeholder="Cantidad">
-                <select name="origen" id="origen" onchange="">
+                <select name="origen" id="origen" onchange="descarte()">
                     <option value="0" selected style="display: none;">Moneda Origen</option>
                     <option value="1">Dolar Estadounidense</option>
                     <option value="1.35">Dolar Canadiense</option>
@@ -33,17 +33,19 @@
                 <input type="text" name="subtot" id="subtot" placeholder="Subtotal">
                 <input type="text" name="comi" id="comi" placeholder="Total Comisión">
                 <input type="text" name="tot" id="tot" placeholder="Total a pagar">
-                <button id="cal" onclick="calcular()">Calcular</button>
-                <button id="reg" onclick="">Registrar</button>
+                <button id="ingr2" onclick="calcularcam()">Calcular</button>
+                <button id="btnreg" onclick="registrar()" >Registrar</button>
             </div>
             <div id="cont2">
                 <h2>Registros Realizados</h2>
                 <div id="registros">
-                    <p></p>
+                    <p id="tabla">
+
+                    </p>
                 </div>
                 <div id="line"></div>
                 <div id="tg">
-                    <button id="borrR" onclick="">Borrar registros</button>
+                    <button id="borrR" onclick="borrar()">Borrar registros</button>
                     <h3>Total general:</h3> <label for="" id="totalgeneral"></label>
                 </div>
             </div>
